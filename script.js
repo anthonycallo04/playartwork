@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
         setInterval(function() {
-            $.get('https://live.radiorockhits.online/api/nowplaying/radiorockhits')
+            $.get('https://live.radiorockhits.com/api/nowplaying/radiorockhits')
                 .done(function(data) {
 
                     const coverImageUrl = data.now_playing.song.art || 'assets/Logoradiorockhits.webp';
